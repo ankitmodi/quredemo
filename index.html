@@ -8,6 +8,25 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.zoom-in-zoom-out {
+  margin: 24px;
+  width: 50px;
+  height: 50px;
+  background: green;
+  animation: zoom-in-zoom-out 2s ease-out infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
 </style>
 </head>
 
@@ -21,6 +40,9 @@ img {
   <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.google.com/" target="_blank">
   <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.bing.com/" target="_blank">
 </map>
+
+
+<div class="zoom-in-zoom-out"></div>
 
 </body>
 </html>
